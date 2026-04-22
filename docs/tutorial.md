@@ -38,16 +38,13 @@ npm install
 
 ## 🔑 第三步：配置环境变量
 
-为了让引擎能成功调用 AI，你需要配置自己的 Key。
+为了让引擎正常工作，你需要配置以下路径：
 
 1. 在项目根目录，你会看到一个名为 `.env.example` 的文件。
 2. 把它**复制并重命名**为 `.env.local`。
 3. 使用代码编辑器（如 VS Code）打开 `.env.local`，填入你的配置：
 
 ```env
-# 大模型 API (用于写剧本、翻译提示词)
-MINIMAX_API_KEY="填写你申请的 API Key"
-
 # 本地工作空间 (非常重要！)
 # 请在你电脑上新建一个专门存放短剧的文件夹，把绝对路径填在这里
 WORKSPACE_PATH="/Users/你的名字/Desktop/短剧项目"
@@ -56,6 +53,8 @@ WORKSPACE_PATH="/Users/你的名字/Desktop/短剧项目"
 # 请自己去 Google Labs 创建一个 Flow 项目，把网址贴过来
 FLOW_PROJECT_URL="https://labs.google/fx/tools/flow/project/..."
 ```
+
+> 💡 **提示**：本系统已经全面进化为**“Web 自动化接管”**模式！无论是写剧本的 Gemini 还是生图的 NanoBanana，全是利用本地浏览器劫持来白嫖的，**完全不需要你花钱去买任何大模型的 API Key！**
 
 ---
 
