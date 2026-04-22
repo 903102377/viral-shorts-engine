@@ -73,11 +73,36 @@ FLOW_PROJECT_URL="https://labs.google/fx/tools/flow/project/..."
 2. 右键 -> 属性，在“目标”栏的最后面加个空格，然后加上 `--remote-debugging-port=9222`。
 3. 双击这个快捷方式打开浏览器。
 
-> **⚠️ 验证成功标志**：打开浏览器后，如果你去 Google Labs 等网站手动登录了账号，我们的代码就能直接无缝借用你的账号权限进行自动化操作！
+---
+
+## 🧩 第五步：安装“人机协同” Chrome 扩展
+
+为了能在网页里直接选取最佳的素材并自动同步到系统，你需要安装我们专门手搓的 Chrome 插件。小白请严格按照以下步骤操作：
+
+1. 在刚才用调试模式打开的 Chrome 浏览器地址栏里，输入 `chrome://extensions/` 并回车。
+2. 在页面的右上角，打开 **“开发者模式” (Developer mode)** 的开关。
+3. 点击左上角的 **“加载已解压的扩展程序” (Load unpacked)** 按钮。
+4. 在弹出的文件选择框中，找到你刚才下载的 `viral-shorts-engine` 文件夹，选择里面名为 `viral-shorts-extension` 的文件夹。
+5. 此时插件已经安装成功！
 
 ---
 
-## 🎬 第五步：启动引擎！
+## 🌐 第六步：打开大模型网页 (必须保持打开)
+
+因为系统是通过接管你的浏览器来实现全自动操作的，所以**在启动引擎前，你必须提前打开并登录以下三个网页，并且不能关闭它们**：
+
+1. **Google Gemini (负责写剧本)**：
+   👉 [https://gemini.google.com/app](https://gemini.google.com/app)
+2. **Google AI Studio (负责生成 TTS 语音)**：
+   👉 [https://aistudio.google.com/generate-speech?model=gemini-3.1-flash-tts-preview](https://aistudio.google.com/generate-speech?model=gemini-3.1-flash-tts-preview)
+3. **Google Labs Flow (负责生图和生视频)**：
+   👉 打开你在 `.env.local` 里配置的 `FLOW_PROJECT_URL` (例如：`https://labs.google/fx/zh/tools/flow/project/你的ID`)
+
+> **⚠️ 注意**：请确保你在这三个网站上都已经**登录了自己的 Google 账号**，否则代码无法正常执行自动化操作。
+
+---
+
+## 🎬 第七步：启动引擎！
 
 万事俱备，回到项目终端，执行启动命令：
 
@@ -89,7 +114,7 @@ npm run dev
 
 ---
 
-## 🎥 第六步：你的第一部爆款短剧
+## 🎥 第八步：你的第一部爆款短剧
 
 在控制台上，你会看到 4 个主要的房间（制片流程）：
 
