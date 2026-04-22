@@ -1,0 +1,20 @@
+{
+  "projectId": "default",
+  "theme": "",
+  "flowUrl": "https://labs.google/fx/zh/tools/flow/project/0f5dfb32-1338-4ff6-a59d-92eb0f824f65",
+  "artStyle": "Pixar 3D animated movie, highly detailed, vibrant colors",
+  "characters": [],
+  "scriptLines": [],
+  "currentPhase": 1,
+  "characterPrompts": {},
+  "characterImages": {},
+  "activeSceneIndex": 0,
+  "sceneVisualPrompts": {},
+  "sceneCameraPrompts": {},
+  "sceneCharacters": {},
+  "sceneDurations": {},
+  "sceneImages": {},
+  "sceneVideos": {},
+  "sceneAudio": {},
+  "sceneAudioDelays": {}
+}
