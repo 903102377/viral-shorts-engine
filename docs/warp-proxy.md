@@ -43,7 +43,7 @@
 
 1. **修改 Codespace ID (初次使用)**
    打开 `start-proxy.sh`，找到第 10 行：
-   `CODESPACE_ID=${1:-"cautious-space-adventure-qwjj6x6w7442x66"}`
+   `CODESPACE_ID=${1:-"your-codespace-name-here"}`
    把双引号里的字符串，替换为你自己 GitHub Codespace 的真实名称。
 
 2. **启动隧道**
