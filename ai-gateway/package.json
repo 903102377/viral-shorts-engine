@@ -1,0 +1,23 @@
+{
+  "name": "ai-gateway",
+  "version": "1.0.0",
+  "description": "本地私有 AI 网关 — 通过 Playwright CDP 劫持浏览器，将 Gemini / Flow / AI Studio 封装为标准 REST API",
+  "private": true,
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "start": "tsx src/server.ts"
+  },
+  "dependencies": {
+    "@playwright/test": "^1.59.1",
+    "cors": "^2.8.5",
+    "dotenv": "^17.4.2",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.3",
+    "@types/node": "^20",
+    "tsx": "^4.19.4",
+    "typescript": "^5"
+  }
+}
